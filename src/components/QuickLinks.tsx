@@ -5,8 +5,8 @@ const QuickLinks: React.FC = () => {
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '20px' }}>
             <a href="/path/to/resume.pdf" style={linkStyle}>Resume</a>
             <a href="/path/to/current-job" style={linkStyle}>Current Job</a>
-            <a href="https://www.linkedin.com/in/yourprofile" style={linkStyle}>LinkedIn</a>
-            <a href="https://github.com/yourusername" style={linkStyle}>GitHub</a>
+            <a href="https://www.linkedin.com/in/anlil-iwas-b7aa892a9" target="_blank" rel="noopener noreferrer" style={linkStyle}>LinkedIn</a>
+            <a href="https://github.com/Iwas1512" target="_blank" rel="noopener noreferrer" style={linkStyle}>GitHub</a>
         </div>
     );
 };
