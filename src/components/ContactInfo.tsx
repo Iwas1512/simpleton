@@ -4,7 +4,7 @@ const ContactInfo: React.FC = () => {
     return (
         <div style={sectionStyle}>
             <h2 style={headingStyle}>Contact</h2>
-            <a href="mailto:anliliwas1@gmail.com" style={contactStyle}>anliliwas1@gmail.com</a>
+            <a href="mailto:anliliwas1@gmail.com" className="glass-button" style={contactStyle}>anliliwas1@gmail.com</a>
         </div>
     );
 };
@@ -28,8 +28,15 @@ const contactStyle: React.CSSProperties = {
     color: 'white',
     textDecoration: 'none',
     fontSize: '16px',
-    paddingLeft: '10px',
-    transition: 'opacity 0.3s',
+    padding: '8px 16px',
+    border: '1px solid rgba(255, 255, 255, 0.3)',
+    borderRadius: '4px',
+    transition: 'all 0.2s ease',
+    display: 'inline-block',
+    cursor: 'pointer',
+    width: 'fit-content',
+    backgroundColor: 'transparent',
+    marginLeft: '10px',
 };
 
 export default ContactInfo;

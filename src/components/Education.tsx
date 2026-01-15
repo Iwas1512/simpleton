@@ -4,7 +4,7 @@ const Education: React.FC = () => {
     return (
         <div style={sectionStyle}>
             <h2 style={headingStyle}>Education</h2>
-            <p style={contentStyle}>CS @ UIC concentration in AI - 3.9/4.0 GPA</p>
+            <p style={contentStyle}>Computer Science Student @ University of Illinois at Chicago - 3.9/4.0 GPA</p>
         </div>
     );
 };

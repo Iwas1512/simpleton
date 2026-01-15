@@ -1,13 +1,20 @@
 import React from 'react';
 
-const QuickLinks: React.FC = () => {
+const RecentProject: React.FC = () => {
     return (
         <div style={sectionStyle}>
-            <h2 style={headingStyle}>Quick Links</h2>
-            <div style={linksContainerStyle}>
-                <a href="/A_Iwas_Resume.pdf" target="_blank" rel="noopener noreferrer" className="glass-button" style={linkStyle}>Resume</a>
-                <a href="https://www.linkedin.com/in/anlil-iwas-b7aa892a9" target="_blank" rel="noopener noreferrer" className="glass-button" style={linkStyle}>LinkedIn</a>
-                <a href="https://github.com/Iwas1512" target="_blank" rel="noopener noreferrer" className="glass-button" style={linkStyle}>GitHub</a>
+            <h2 style={headingStyle}>Recent Project</h2>
+            <div style={projectContainerStyle}>
+                <a 
+                    href="https://github.com/anthonyhana04/PostureGuard-HTN-2025" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="glass-button" 
+                    style={linkStyle}
+                >
+                    PostureGuard AI
+                </a>
+                <p style={commentStyle}>hack the north 2025</p>
             </div>
         </div>
     );
@@ -28,10 +35,7 @@ const headingStyle: React.CSSProperties = {
     paddingBottom: '5px',
 };
 
-const linksContainerStyle: React.CSSProperties = {
-    display: 'flex',
-    flexDirection: 'column',
-    gap: '8px',
+const projectContainerStyle: React.CSSProperties = {
     paddingLeft: '10px',
 };
 
@@ -49,4 +53,12 @@ const linkStyle: React.CSSProperties = {
     backgroundColor: 'transparent',
 };
 
-export default QuickLinks;
+const commentStyle: React.CSSProperties = {
+    color: 'rgba(255, 255, 255, 0.6)',
+    fontSize: '14px',
+    margin: '5px 0 0 0',
+    fontStyle: 'italic',
+};
+
+export default RecentProject;
+

@@ -4,8 +4,8 @@ const Experience: React.FC = () => {
     return (
         <div style={sectionStyle}>
             <h2 style={headingStyle}>Experience</h2>
-            <p style={contentStyle}>Software Developer @ UIC - developing uic.edu</p>
-            <p style={contentStyle}>prev: software engineer @ WM</p>
+            <p style={contentStyle}>Software Developer @ UIC - developing <a href="https://uic.edu" target="_blank" rel="noopener noreferrer" className="glass-button" style={linkStyle}>uic.edu</a></p>
+            <p style={contentStyle}>prev: software engineer @ <a href="https://wm.com" target="_blank" rel="noopener noreferrer" className="glass-button" style={linkStyle}>WM</a></p>
         </div>
     );
 };
@@ -30,6 +30,19 @@ const contentStyle: React.CSSProperties = {
     fontSize: '16px',
     margin: '5px 0',
     paddingLeft: '10px',
+};
+
+const linkStyle: React.CSSProperties = {
+    color: 'white',
+    textDecoration: 'none',
+    fontSize: '16px',
+    padding: '4px 8px',
+    border: '1px solid rgba(255, 255, 255, 0.3)',
+    borderRadius: '4px',
+    transition: 'all 0.2s ease',
+    display: 'inline-block',
+    cursor: 'pointer',
+    backgroundColor: 'transparent',
 };
 
 export default Experience;

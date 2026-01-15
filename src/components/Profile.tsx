@@ -3,22 +3,32 @@ import React from 'react';
 const Profile: React.FC = () => {
     return (
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginBottom: '30px' }}>
-            <img 
-                src="/profile-picture.jpg" 
-                alt="Profile" 
-                style={profileImageStyle}
-            />
+            <div style={imageContainerStyle}>
+                <img 
+                    src="/unnamed.jpg" 
+                    alt="Profile" 
+                    style={profileImageStyle}
+                />
+            </div>
         </div>
     );
 };
 
-const profileImageStyle: React.CSSProperties = {
+const imageContainerStyle: React.CSSProperties = {
     width: '150px',
     height: '150px',
     borderRadius: '50%',
-    objectFit: 'cover',
-    marginBottom: '15px',
+    overflow: 'hidden',
     border: '3px solid rgba(255, 255, 255, 0.2)',
+    marginBottom: '15px',
+};
+
+const profileImageStyle: React.CSSProperties = {
+    width: '100%',
+    height: '100%',
+    objectFit: 'cover',
+    objectPosition: 'center top',
+    transform: 'scale(1.2)',
 };
 
 const statusStyle: React.CSSProperties = {
