@@ -2,15 +2,12 @@ import React from 'react';
 
 const Profile: React.FC = () => {
     return (
-        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginBottom: '20px' }}>
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginBottom: '30px' }}>
             <img 
                 src="/profile-picture.jpg" 
                 alt="Profile" 
                 style={profileImageStyle}
             />
-            <p style={statusStyle}>
-                Software Developer @ UIC - developing uic.edu and prev: software engineer @ WM
-            </p>
         </div>
     );
 };

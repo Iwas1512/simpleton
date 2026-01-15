@@ -1,10 +1,10 @@
 import React from 'react';
 
-const ContactInfo: React.FC = () => {
+const Education: React.FC = () => {
     return (
         <div style={sectionStyle}>
-            <h2 style={headingStyle}>Contact</h2>
-            <a href="mailto:anliliwas1@gmail.com" style={contactStyle}>anliliwas1@gmail.com</a>
+            <h2 style={headingStyle}>Education</h2>
+            <p style={contentStyle}>CS @ UIC concentration in AI - 3.9/4.0 GPA</p>
         </div>
     );
 };
@@ -24,13 +24,12 @@ const headingStyle: React.CSSProperties = {
     paddingBottom: '5px',
 };
 
-const contactStyle: React.CSSProperties = {
+const contentStyle: React.CSSProperties = {
     color: 'white',
-    textDecoration: 'none',
     fontSize: '16px',
+    margin: '0',
     paddingLeft: '10px',
-    transition: 'opacity 0.3s',
 };
 
-export default ContactInfo;
+export default Education;
 
