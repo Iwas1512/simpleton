@@ -1,4 +1,4 @@
-# Simplistic Portfolio
+# Simplistic Portfolio (Simpleton)
 
 This is a simplistic portfolio built using React. It features a clean design with a black background and quick link buttons to important resources such as your resume, current job, LinkedIn, and GitHub.
 
